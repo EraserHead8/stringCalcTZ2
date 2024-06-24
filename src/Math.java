@@ -74,8 +74,7 @@ public class Math {
                         num2 = (byte) str1.length();
                         num = (byte) (num2 / num);
                         System.out.println(str1.substring(0, num));
-                }
-
+            }
         }
     }
 }

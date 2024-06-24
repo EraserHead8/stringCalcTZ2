@@ -18,7 +18,5 @@ public class Main {
         catch (NumberFormatException e) {
             System.out.println("Строка должна вводится в ковычках, а операторами могут являтся только +, -, *, / ");
         }
-
-
     }
 }
