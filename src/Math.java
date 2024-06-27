@@ -21,6 +21,14 @@ public class Math {
             str1 = mas[1];
             ope = mas[2];
             str2 = mas[3];
+            if (str1.length() >= 11 || str2.length() >= 11) {
+                try{
+                    throw new ScannerExeption("Допускается ввод не более 10 символов на каждую строку");
+                }
+                catch (ScannerExeption e){
+                    System.out.println(e.getMessage());
+                }
+            }
 
             switch (ope) {
                 case " + ":
@@ -43,7 +51,7 @@ public class Math {
             }
             switch (ope) {
                     case "*":
-                        if (num <= 1 || num >= 10) {
+                        if (num <= 1 || num >= 11) {
                             try {
                                 throw new ScannerExeption("Допускаетс ввод чисел от 1 до 10");
                             }
@@ -63,7 +71,7 @@ public class Math {
                         }
                         break;
                     case "/":
-                        if (num <= 1 || num >= 10) {
+                        if (num <= 1 || num >= 11) {
                             try {
                                 throw new ScannerExeption("Допускаетс ввод чисел от 1 до 10");
                             }
